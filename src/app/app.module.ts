@@ -5,17 +5,20 @@ import { AppComponent } from './app.component';
 import { DynamicContentOutletModule } from './dynamic-content-outlet/dynamic-content-outlet.module';
 import {ModalModule} from './modal/modal.module';
 import {HelloComponent} from './hello/hello.component';
+import {DialogModule} from './dynamic-dialog/dialog/dialog.module';
+import {ExampleComponent} from './dynamic-dialog/example/example.component';
 
 @NgModule({
-  declarations: [AppComponent, HelloComponent],
+  declarations: [AppComponent, HelloComponent, ExampleComponent],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
     DynamicContentOutletModule,
-    ModalModule
+    ModalModule,
+    DialogModule
   ],
   bootstrap: [AppComponent],
-  entryComponents: [HelloComponent]
+  entryComponents: [HelloComponent, ExampleComponent]
 })
 export class AppModule {}
