@@ -3,8 +3,16 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular8-dynamic-content';
+  components = [
+    'DynamicSingleOneComponent',
+    'DynamicMultipleOneComponent',
+    'DynamicMultipleTwoComponent'
+  ];
+
+  selectedComponent = '';
+
+  renderComponent() {}
 }

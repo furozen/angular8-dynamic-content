@@ -22,7 +22,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": false,
+            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -30,7 +30,11 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "lazyModules": [
+              "src/app/dynamic-multiple/dynamic-multiple.module",
+              "src/app/dynamic-single/dynamic-single.module"
+            ]
           },
           "configurations": {
             "production": {
